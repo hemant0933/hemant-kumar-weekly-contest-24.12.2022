@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+.navbar-brand img:hover{
+    transform: scale(1.1);
+}
+.heading-flex h1{
+    font-weight: 400;
+    font-size: 64px;
+    font-style: 'Inter';
+    color: black;
+}
+.text-muted{
+    --bs-text-opacity: 1;
+    color: #6c757d!important;
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footer section */
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-top: 50px solid gold;
+    border-bottom: 50px solid gold;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /* gap: 10; */
+}
+
+.footer-box .developer-img img{
+    position: relative; 
+    left: 10px;
+    width: 10vw;  
+    border-radius: 250px;   
+}
+.footer-box .developer-img img:hover{
+    transform: scale(1.1);
+    overflow-y: none;
+    border: 1px solid white;
+    width: 10vw;
+    border-radius: 251px;
+}
+.text-part a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding-right: 30px;
+    font-size: 20px;
+}
+.name{
+    color: white;
+    margin-top: -40px;
+    font-size: 20px;
+}
+.name:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.brand-logo:hover{
+    transform: rotate(180deg);
+}
+
+/* last line of pages --- weavy things*/
+
+.about-me{
+    margin-left: 40px;
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+.about-me span{
+    font-family: 'Inter';
+    position: relative;
+    display: inline-block;
+    animation: updown 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes updown{
+    0%,40%,100%{
+        transform: translateY(0);
+        color: #eeeee4;
+    }
+    20%{
+        transform: translateY(-5px)
+    }
+}
+.back-to-top a img{
+    position: sticky;
+    margin-left: 90vw;
+    margin-top: -5vh;
+}
